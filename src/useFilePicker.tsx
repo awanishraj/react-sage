@@ -154,6 +154,9 @@ export const useFilePicker = (options: UseFilePicker.Options = {}) => {
         fileInputRef.current.click()
       }
     },
+    reset(): void {
+        setFileList(null);
+    },
     /**
      * A hidden file input element that must be rendered somewhere on the same page
      * as where the hook is used. This hidden file input is used to toggle open the
